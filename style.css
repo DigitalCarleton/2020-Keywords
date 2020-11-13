@@ -39,10 +39,10 @@ h1.entry-title, h2.entry-title, h2.entry-title a:hover, h2.entry-title a:active 
 
 /* Hide post meta TEMPORARILY
  * DELETE once meta is fixed */
-.entry-meta {
-	display:none;
+/*.entry-meta {
+    display:none;
 }
-
+*/
 /* ===LINK STYLES=== */
 
 /* Link color Carleton blue */

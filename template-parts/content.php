@@ -22,20 +22,7 @@
 		else :
 			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 		endif;
-
-		if ( 'post' === get_post_type() ) : ?>
-		<div class="entry-meta">
-			<div class="blog-data-wrapper">
-				<div class="post-data-divider"></div>
-				<div class="post-data-positioning">
-					<div class="post-data-text">
-						<?php responsiveblogily_posted_on(); ?>
-					</div>
-				</div>
-			</div>
-		</div><!-- .entry-meta -->
-		<?php
-		endif; ?>
+        ?>
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
@@ -59,6 +46,22 @@
 			'after'  => '</div>',
 			) );
 			?>
+
+        <?php
+		if ( 'post' === get_post_type() ) : ?>
+		<div class="entry-meta">
+			<div class="blog-data-wrapper">
+				<div class="post-data-divider"></div>
+				<div class="post-data-positioning">
+					<div class="post-data-text">
+						<?php responsiveblogily_posted_on(); ?>
+					</div>
+				</div>
+			</div>
+		</div><!-- .entry-meta -->
+		<?php
+		endif; ?>
+
 
 <!-- 2020Keywords Removing the Read More link -->
             <!-- <div class="text-center">
