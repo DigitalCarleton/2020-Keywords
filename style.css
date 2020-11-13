@@ -37,12 +37,30 @@ h1.entry-title, h2.entry-title, h2.entry-title a:hover, h2.entry-title a:active 
 	text-align:left;
 }
 
+
+/* ===POST META STYLES=== */
+
 /* Hide post meta TEMPORARILY
  * DELETE once meta is fixed */
-/*.entry-meta {
+.entry-meta {
     display:none;
+/*    display: inline-block;
+*/	margin: auto;
+	text-align: left;
+	font-size: 14px;
+	color: #000;
+	margin-bottom: 5px;
+	padding: 0px 0px;
+	width: 100%;
+	font-weight: 200;
 }
-*/
+
+}
+
+.post-data-positioning {
+    text-align: left;
+}
+
 /* ===LINK STYLES=== */
 
 /* Link color Carleton blue */
