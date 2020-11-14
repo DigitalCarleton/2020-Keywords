@@ -40,10 +40,7 @@ h1.entry-title, h2.entry-title, h2.entry-title a:hover, h2.entry-title a:active 
 
 /* ===POST META STYLES=== */
 
-/* Hide post meta TEMPORARILY
- * DELETE once meta is fixed */
 .entry-meta {
-/*    display:none;*/
     display: inline-block;
 	margin: auto;
 	text-align: left;

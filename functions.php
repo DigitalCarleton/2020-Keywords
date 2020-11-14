@@ -6,6 +6,7 @@ function my_theme_enqueue_styles() {
 
 // 2020Keywords: overriding this function from inc/template-tags.php to:
 // 1) remove byline so authors are not displayed
+// 2) add comments link 
 if ( ! function_exists( 'responsiveblogily_posted_on' ) ) :
 	/**
 	 * Prints HTML with meta information for the current post-date/time and author.
@@ -37,6 +38,16 @@ if ( ! function_exists( 'responsiveblogily_posted_on' ) ) :
         // );
 
         echo '<span class="posted-on">' . $posted_on . '</span><span class="byline"> ' . $byline . '</span>'; // WPCS: XSS OK.
+
+		// Comments link — modified from twentytwenty theme's get_post_meta() function
+		if ( ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
+			?>
+			<div class="post-comment-link">
+					<?php comments_popup_link(); ?>
+			</div>
+			<?php
+
+		}
 
 	}
 endif;
