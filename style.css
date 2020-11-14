@@ -42,26 +42,36 @@ h1.entry-title, h2.entry-title, h2.entry-title a:hover, h2.entry-title a:active 
 
 .entry-meta {
     display: inline-block;
-	margin: auto;
-	text-align: left;
-	font-size: 14px;
-	color: #000;
-	margin-bottom: 5px;
-	padding: 0px 0px;
-	width: 100%;
-	font-weight: 200;
-}
-
+    margin: auto;
+    text-align: left;
+    font-size: 14px;
+    color: #000;
+    margin-bottom: 5px;
+    padding: 0px 0px;
+    width: 100%;
 }
 
 .post-data-positioning {
     text-align: left;
 }
 
+.post-data-text {
+	display: inline-block;
+	margin: auto;
+	text-align: left;
+	font-size: 14px;
+	color: #000;
+	margin-bottom: 5px;
+	padding: 0px 0px;
+	font-family: Lato, 'helvetica neue', helvetica, arial !important;
+}
+
+
+
 /* ===LINK STYLES=== */
 
 /* Link color Carleton blue */
-a {
+a, .post-data-text a, h2.entry-title a {
 	color: #0b5091;
 }
 
