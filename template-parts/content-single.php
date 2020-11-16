@@ -59,21 +59,23 @@
 				'after'  => '</div>',
 			) );
 		?>
-	</div><!-- .entry-content -->
     
-    <!-- 2020Keywords: moving post meta below content -->
-	<?php
-    if ( 'post' === get_post_type() ) : ?>
-	<div class="entry-meta">
-		<div class="blog-data-wrapper">
-			<div class="post-data-divider"></div>
-			<div class="post-data-positioning">
-				<div class="post-data-text">
-					<?php responsiveblogily_posted_on(); ?>
-				</div>
-			</div>
-		</div>
-	</div><!-- .entry-meta -->
+        <!-- 2020Keywords: moving post meta below content -->
+    	<?php
+        if ( 'post' === get_post_type() ) : ?>
+    	<div class="entry-meta">
+    		<div class="blog-data-wrapper">
+    			<div class="post-data-divider"></div>
+    			<div class="post-data-positioning">
+    				<div class="post-data-text">
+    					<?php responsiveblogily_posted_on(); ?>
+    				</div>
+    			</div>
+    		</div>
+    	</div><!-- .entry-meta -->
+
+	</div><!-- .entry-content -->
+
 	<?php
 	endif; ?>
     
