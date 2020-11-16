@@ -1,0 +1,295 @@
+/*
+ Theme Name:   2020 Keywords
+ Theme URI:    
+ Description:  Responsive Blogily Child Theme
+ Author:       Austin Mason
+ Author URI:   http://medhieval.com
+ Template:     responsiveblogily
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags: two-columns, right-sidebar, flexible-header, custom-background, custom-colors, custom-header, custom-menu, custom-logo, featured-images, footer-widgets, theme-options, threaded-comments, translation-ready, blog, entertainment, news
+ Text Domain:  2020keywords
+*/
+
+body.custom-background {
+    background-color: #f3b61d !important;
+}
+
+.primary-menu .pmenu, .super-menu, #smobile-menu, .primary-menu ul li ul.children, .primary-menu ul li ul.sub-menu {
+    background-color: #0b5091;
+}
+
+li.current-menu-item {
+    background-color: rgba(255, 255, 255, .15);
+}
+
+.main-navigation ul li a, .main-navigation ul li .sub-arrow, .super-menu .toggle-mobile-menu, .toggle-mobile-menu:before, .mobile-menu-active .smenu-hide {
+    color: #ffffff;
+}
+
+.site-title a, .site-description {
+    color: #ffffff;
+}
+
+.site-title a, .site-description {
+    color: #ffffff;
+}
+
+.wp-block-group.grey-box.has-background {
+    padding: 4px 10px 0px 4px;
+}
+
+/* left justify titles (keywords) */
+h1.entry-title, h2.entry-title, h2.entry-title a:hover, h2.entry-title a:active {
+	text-align:left;
+}
+
+
+/* ===POST META STYLES=== */
+
+.entry-meta {
+    display: inline-block;
+    margin: auto;
+    text-align: left;
+    font-size: 14px;
+    color: #000;
+    margin-bottom: 5px;
+    padding: 0px 0px;
+    width: 100%;
+}
+
+.post-data-positioning {
+    text-align: left;
+}
+
+.post-data-text {
+	display: inline-block;
+	margin: auto;
+	text-align: left;
+	font-size: 14px;
+	color: #000;
+	margin-bottom: 5px;
+	padding: 0px 0px;
+	font-family: Lato, 'helvetica neue', helvetica, arial !important;
+}
+
+.custom-fields {
+    font-style: italic;
+    margin-bottom: 1.5em;
+}
+
+.blog-data-wrapper {
+    margin-bottom: 0px;
+}
+
+/* ===LINK STYLES=== */
+
+/* Link color Carleton blue */
+a, .post-data-text a, h2.entry-title a {
+	color: #0b5091;
+}
+
+/* Side bar link buttons */
+#secondary .widget a.wp-block-button__link {
+	background-color:#0b5091;
+	color:white;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	font-size:1.1em
+}
+
+/* Form submit buttons */
+input.submit, input.search-submit, .comments-area p.form-submit input, .featured-sidebar .widget_search input.search-submit, input.wpuf-submit-button, .search-no-results #main .search-form .search-submit {
+	background-color:#0b5091;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	font-weight:500;
+  font-size:1em;
+	color:white;
+	border:0;
+}
+
+/* Contribute form submit */
+input.wpuf-submit-button {
+	width:100%;
+}
+
+/* ===END LINK STYLES=== */
+
+/* Side bar center */
+.swidgets-wrap {
+	text-align:center;
+}
+
+/* ==FOOTER STYLES== */
+
+/* Background Carleton blue */
+.site-footer {
+	background-color:#0b5091;
+}
+
+/* Make one column take
+ * up full width */
+.footer-column-three {
+  padding: 20px;
+  text-align: center;
+	max-width: 100%;
+}
+
+/* Footer text: currently unused */
+.footer-column-three p {
+	color:white;
+	opacity:0.8;
+}
+
+/* Remove border around search results */
+.search-no-results #main .search-form label, .error404 #main .search-form label, .search-no-results #main .search-form .search-submit {
+	border: none;
+}
+
+/* Comments Area */
+.comments-area .comments-title {
+	font-size: 1.5em;
+}
+
+/* ===ALPHABETIC PAGINATION=== */
+
+/* centering and spacing 
+ * alphabet menu 
+ */
+ul.ap_pagination.layout_H {
+	padding:0;
+	margin:0;
+	justify-content: center;
+    display: flex !important;
+	flex-wrap:wrap;
+}
+
+/* fix to make all letters
+ * the same size */
+ul.ap_pagination li a, ul.ap_pagination li a:active, ul.ap_pagination li a:visited, ul.ap_pagination li small {
+	font-size:1em;
+}
+
+/* adjust spacing down after alphabet */
+ul.ap_pagination.layout_H + header {
+    padding: 2% !important;
+}
+
+/* default spacing for letters */
+ul.ap_pagination.layout_H li {
+	width: calc(5% - 10px);
+ 	padding:0;
+}
+
+/* spacing for medium screens */
+@media (max-width: 600px)	{   
+	ul.ap_pagination.layout_H li {
+	width: calc(11% - 10px);
+	}
+    ul.ap_pagination.layout_H + header {
+        padding: 8% !important;
+    }
+}
+
+/* spacing for small screens */
+@media (max-width: 375px)	{   
+	ul.ap_pagination.layout_H li {
+	width: calc(10% - 8px);
+	}
+    ul.ap_pagination.layout_H + header {
+        padding: 8% !important;
+    }
+}
+
+/* ===END ALPHABETIC PAGINATION=== */
+
+main {
+	padding: 2% 4%;
+}
+
+body.category-glossary header h1 {
+    display:none;
+}
+
+/* ===CONTRIBUTE FORM=== */
+
+form.wpuf-form-add, article.blogposts-list {
+	border: 0.5px solid #0b5091;
+}
+
+input.textfield, div.wpuf-fields input {
+	max-width:98%;
+}
+
+form.wpuf-form-add label, ul.wpuf-form li.wpuf-el, ul.wpuf-form.form-label-above li .wpuf-label {
+	margin-bottom:0;
+}
+
+ul.wpuf-form li .wpuf-label .required {
+  color: #EE0000 !important;
+}
+
+/* ===END CONTRIBUTE FORM=== */
+
+/* Hide sidebar on contribute page
+ */
+.page-id-87 aside {
+	display:none;
+}
+
+.page-id-87 .featured-content {
+	width:100%;
+}
+
+.content-wrap {
+	width:90%;
+	max-width:950px;
+}
+
+
+.spbsm-followbuttons-output-wrapper .spbsm-output-textstring, .spbsm-sharebuttons-output-wrapper .spbsm-output-textstring {
+	font-family: Merriweather, lato, 'helvetica neue', helvetica, arial !important;
+	font-size:1em !important;
+}
+
+/* ===HEADER AND TITLE=== */
+
+.site-branding {
+    padding: 8% 0 8%;
+	text-align: center;
+	width:100%;
+	margin-top:3%;
+	background-image:url("https://2020keywords.sites.carleton.edu/wp-content/uploads/2020/10/cropped-IMG_3122.jpg");
+	background-size:100% 100%;
+    background-color: #0b5091;
+	position:relative;
+}
+
+.site-branding:before {
+    position: absolute;
+    content:" ";
+    top:0px;
+    left:0;
+    width:100%;
+    height:100%;
+    display: block;
+    z-index:0;
+	background-color: rgba(54,118,179,0.6);
+}
+
+.site-description {
+	font-variant:small-caps;
+	font-size:1.4em;
+	position:relative;
+}
+
+.site-title {
+	position:relative;
+	font-family: Lato, 'helvetica neue', helvetica, arial !important;
+}
+
+.comments-area .comment-meta .comment-metadata a, .comments-area .comment-form-cookies-consent label {
+	color: #666 !important;
+}
