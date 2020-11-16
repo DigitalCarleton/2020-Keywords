@@ -26,21 +26,33 @@
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
+        <?php 
+        /*  2020Keywords: adding part of speech form field data
+            Print the part of speech value if exists
+        */
+        $pos = get_post_meta( $post->ID, 'part_of_speech__optional_', true );
+        if ( ! empty ( $pos ) && $pos != -1 ) :
+        ?>
+        <div class="custom-fields cf-pos">
+            <?php printf( '%s.', $pos ); ?>
+        </div>
+        <?php endif; ?>
+
+		<?php the_content(); ?>
+        
+        <?php 
+        /*  2020Keywords: adding usage form field data
+            Print the usage value if exists
+        */
+        $usage = get_post_meta( $post->ID, 'usage__optional_', true );
+        if ( ! empty ( $usage ) ) : 
+        ?>
+        <div class="custom-fields cf-usage">
+            <?php printf( '"%s"', $usage ); ?>
+        </div>
+        <?php endif; ?>
+
 		<?php
-		the_excerpt( sprintf(
-			wp_kses(
-				/* translators: %s: Name of current post. Only visible to screen readers */
-				__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'responsiveblogily' ),
-				array(
-					'span' => array(
-						'class' => array(),
-						),
-					)
-				),
-			get_the_title()
-			) );
-
-
 		wp_link_pages( array(
 			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'responsiveblogily' ),
 			'after'  => '</div>',

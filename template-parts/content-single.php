@@ -27,7 +27,31 @@
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
+        <?php 
+        /*  2020Keywords: adding part of speech form field data
+            Print the part of speech value if exists
+        */
+        $pos = get_post_meta( $post->ID, 'part_of_speech__optional_', true );
+        if ( ! empty ( $pos ) && $pos != -1 ) :
+        ?>
+        <div class="custom-fields cf-pos">
+            <?php printf( '%s.', $pos ); ?>
+        </div>
+        <?php endif; ?>
+
 		<?php the_content(); ?>
+        
+        <?php 
+        /*  2020Keywords: adding usage form field data
+            Print the usage value if exists
+        */
+        $usage = get_post_meta( $post->ID, 'usage__optional_', true );
+        if ( ! empty ( $usage ) ) : 
+        ?>
+        <div class="custom-fields cf-usage">
+            <?php printf( '"%s"', $usage ); ?>
+        </div>
+        <?php endif; ?>
 
 		<?php
 			wp_link_pages( array(
