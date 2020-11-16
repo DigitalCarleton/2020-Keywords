@@ -20,6 +20,10 @@ body.custom-background {
     background-color: #0b5091;
 }
 
+li.current-menu-item {
+    background-color: rgba(255, 255, 255, .15);
+}
+
 .main-navigation ul li a, .main-navigation ul li .sub-arrow, .super-menu .toggle-mobile-menu, .toggle-mobile-menu:before, .mobile-menu-active .smenu-hide {
     color: #ffffff;
 }
@@ -30,6 +34,10 @@ body.custom-background {
 
 .site-title a, .site-description {
     color: #ffffff;
+}
+
+.wp-block-group.grey-box.has-background {
+    padding: 4px 10px 0px 4px;
 }
 
 /* left justify titles (keywords) */
@@ -195,16 +203,17 @@ ul.ap_pagination.layout_H li {
     }
 }
 
-
 /* ===END ALPHABETIC PAGINATION=== */
 
 main {
 	padding: 2% 4%;
 }
 
-body.category-glossary header h1 {
-	display:none;
+/*body.category-glossary header h1 {
+    display:none;
 }
+*/
+/* ===CONTRIBUTE FORM=== */
 
 form.wpuf-form-add, article.blogposts-list {
 	border: 0.5px solid #0b5091;
@@ -214,9 +223,11 @@ input.textfield, div.wpuf-fields input {
 	max-width:98%;
 }
 
-ul.wpuf-form li, ul.wpuf-form.form-label-above li .wpuf-label {
+form.wpuf-form-add label, ul.wpuf-form li.wpuf-el, ul.wpuf-form.form-label-above li .wpuf-label {
 	margin-bottom:0;
 }
+
+/* ===END CONTRIBUTE FORM=== */
 
 /* Hide sidebar on contribute page
  */
