@@ -71,6 +71,10 @@ h1.entry-title, h2.entry-title, h2.entry-title a:hover, h2.entry-title a:active 
     margin-bottom: 1.5em;
 }
 
+.blog-data-wrapper {
+    margin-bottom: 0px;
+}
+
 /* ===LINK STYLES=== */
 
 /* Link color Carleton blue */
@@ -149,9 +153,8 @@ input.wpuf-submit-button {
 ul.ap_pagination.layout_H {
 	padding:0;
 	margin:0;
-	margin-bottom:25px;
 	justify-content: center;
-  display: flex !important;
+    display: flex !important;
 	flex-wrap:wrap;
 }
 
@@ -159,6 +162,11 @@ ul.ap_pagination.layout_H {
  * the same size */
 ul.ap_pagination li a, ul.ap_pagination li a:active, ul.ap_pagination li a:visited, ul.ap_pagination li small {
 	font-size:1em;
+}
+
+/* adjust spacing down after alphabet */
+ul.ap_pagination.layout_H + header {
+    padding: 2% !important;
 }
 
 /* default spacing for letters */
@@ -172,6 +180,9 @@ ul.ap_pagination.layout_H li {
 	ul.ap_pagination.layout_H li {
 	width: calc(11% - 10px);
 	}
+    ul.ap_pagination.layout_H + header {
+        padding: 8% !important;
+    }
 }
 
 /* spacing for small screens */
@@ -179,19 +190,24 @@ ul.ap_pagination.layout_H li {
 	ul.ap_pagination.layout_H li {
 	width: calc(10% - 8px);
 	}
+    ul.ap_pagination.layout_H + header {
+        padding: 8% !important;
+    }
 }
 
 
+/* ===END ALPHABETIC PAGINATION=== */
+
 main {
-	padding: 0px 2%;
+	padding: 2% 4%;
 }
 
 body.category-glossary header h1 {
 	display:none;
 }
 
-form.wpuf-form-add {
-	border: 1px solid #0b5091;
+form.wpuf-form-add, article.blogposts-list {
+	border: 0.5px solid #0b5091;
 }
 
 input.textfield, div.wpuf-fields input {
@@ -202,6 +218,8 @@ ul.wpuf-form li, ul.wpuf-form.form-label-above li .wpuf-label {
 	margin-bottom:0;
 }
 
+/* Hide sidebar on contribute page
+ */
 .page-id-87 aside {
 	display:none;
 }
@@ -221,8 +239,10 @@ ul.wpuf-form li, ul.wpuf-form.form-label-above li .wpuf-label {
 	font-size:1em !important;
 }
 
+/* ===HEADER AND TITLE=== */
+
 .site-branding {
-  padding: 8% 0 8%;
+    padding: 8% 0 8%;
 	text-align: center;
 	width:100%;
 	margin-top:3%;
@@ -232,14 +252,14 @@ ul.wpuf-form li, ul.wpuf-form.form-label-above li .wpuf-label {
 }
 
 .site-branding:before {
-	position: absolute;
-  content:" ";
-  top:0px;
-  left:0;
-  width:100%;
-  height:100%;
-  display: block;
-  z-index:0;
+    position: absolute;
+    content:" ";
+    top:0px;
+    left:0;
+    width:100%;
+    height:100%;
+    display: block;
+    z-index:0;
 	background-color: rgba(54,118,179,0.6);
 }
 
