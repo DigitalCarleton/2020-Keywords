@@ -181,6 +181,7 @@ ul.ap_pagination.layout_H {
 	justify-content: center;
     display: flex !important;
 	flex-wrap:wrap;
+    width:100%;
 }
 
 /* fix to make all letters
