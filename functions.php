@@ -37,6 +37,16 @@ if ( ! function_exists( 'responsiveblogily_posted_on' ) ) :
         //     '<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
         // );
 
+		// Tags link — modified from twentytwenty theme's get_post_meta() function
+		if ( has_tag() ) {
+			?>
+			<div class="tagcloud tag-right">
+					<?php the_tags( 'Tags: ', ', ', '' ); ?>
+			</div>
+			<?php
+
+		}
+
         echo '<span class="posted-on">' . $posted_on . '</span><span class="byline"> ' . $byline . '</span>'; // WPCS: XSS OK.
 
 		// Comments link — modified from twentytwenty theme's get_post_meta() function

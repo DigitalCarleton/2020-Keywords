@@ -72,6 +72,7 @@ h1.entry-title, h2.entry-title, h2.entry-title a:hover, h2.entry-title a:active 
 	margin-bottom: 5px;
 	padding: 0px 0px;
 	font-family: Lato, 'helvetica neue', helvetica, arial !important;
+    width:100%;
 }
 
 .custom-fields {
@@ -88,6 +89,17 @@ h1.entry-title, h2.entry-title, h2.entry-title a:hover, h2.entry-title a:active 
 /* Link color Carleton blue */
 a, .post-data-text a, h2.entry-title a {
 	color: #0b5091;
+}
+
+/* tag links */
+.tagcloud a {
+    color: #0b5091 !important;
+    text-decoration: none !important;
+}
+
+.tag-right {
+    float: right;
+    width: 33%;
 }
 
 /* Side bar link buttons */
