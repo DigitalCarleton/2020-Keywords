@@ -36,6 +36,10 @@ li.current-menu-item {
     color: #ffffff;
 }
 
+.single article .entry-content, .page article .entry-content {
+	color: #656565;
+}
+
 .wp-block-group.grey-box.has-background {
     padding: 4px 10px 0px 4px;
 }
@@ -89,10 +93,11 @@ h1.entry-title, h2.entry-title, h2.entry-title a:hover, h2.entry-title a:active 
 /* Link color Carleton blue */
 a, .post-data-text a, h2.entry-title a {
 	color: #0b5091;
+    text-decoration: none;
 }
 
 /* tag links */
-.tagcloud a {
+.tagcloud a, .wp-block-tag-cloud a {
     color: #0b5091 !important;
     text-decoration: none !important;
 }
@@ -223,6 +228,15 @@ main {
 
 body.category-glossary header h1 {
     display:none;
+}
+
+.archive .page-header h1 {
+	text-align: center;
+	font-size: 30px;
+    border: none;
+	line-height: 150%;
+    margin: 0px;
+	padding:10px;
 }
 
 /* ===CONTRIBUTE FORM=== */
