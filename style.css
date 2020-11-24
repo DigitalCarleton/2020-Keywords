@@ -117,18 +117,18 @@ a, .post-data-text a, h2.entry-title a {
 }
 
 /* Form submit buttons */
-input.submit, input.search-submit, .comments-area p.form-submit input, .featured-sidebar .widget_search input.search-submit, input.wpuf-submit-button, .search-no-results #main .search-form .search-submit {
+input.submit, input.search-submit, .comments-area p.form-submit input, .featured-sidebar .widget_search input.search-submit, input.wpuf-submit-button, .search-no-results #main .search-form .search-submit, div.wpforms-container-full .wpforms-form button[type=submit] {
 	background-color:#0b5091;
 	text-transform: uppercase;
 	letter-spacing: 0.5px;
 	font-weight:500;
-  font-size:1em;
+    font-size:1em;
 	color:white;
 	border:0;
 }
 
 /* Contribute form submit */
-input.wpuf-submit-button {
+input.wpuf-submit-button, div.wpforms-container-full .wpforms-form button[type=submit] {
 	width:100%;
 }
 
@@ -258,7 +258,24 @@ ul.wpuf-form li .wpuf-label .required {
   color: #EE0000 !important;
 }
 
-/* ===END CONTRIBUTE FORM=== */
+/* ===CONTACT US FORM=== */
+form.wpforms-form {
+    border: 0.5px solid #0b5091;
+}
+
+div.wpforms-container-full .wpforms-form .wpforms-field {
+    padding: 10px;
+}
+
+div.wpforms-container-full .wpforms-form .wpforms-field-label {
+    text-transform: uppercase;
+}
+
+div.wpforms-container-full .wpforms-form .wpforms-submit-container {
+    padding: 10px;
+}
+
+
 
 /* Hide sidebar on contribute page
  */
