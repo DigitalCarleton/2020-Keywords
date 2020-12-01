@@ -20,3 +20,5 @@ Major overrides include:
 - Custom styles for output of plugins used:
   - [Alphabetic Pagination](https://wordpress.org/plugins/alphabetic-pagination/)
   - [WP User Frontend](https://wordpress.org/plugins/wp-user-frontend/)
+  - [Posts Like Dislike](https://wordpress.org/plugins/posts-like-dislike/)
+  - [AddToAny Share Buttons](https://wordpress.org/plugins/add-to-any/)
