@@ -7,6 +7,7 @@ function my_theme_enqueue_styles() {
 // 2020Keywords: overriding this function from inc/template-tags.php to:
 // 1) remove byline so authors are not displayed
 // 2) add comments link 
+// 3) add tags display
 if ( ! function_exists( 'responsiveblogily_posted_on' ) ) :
 	/**
 	 * Prints HTML with meta information for the current post-date/time and author.
