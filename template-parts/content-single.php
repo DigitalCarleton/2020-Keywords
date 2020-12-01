@@ -74,8 +74,13 @@
     		</div>
     	</div><!-- .entry-meta -->
 
+        <!-- 2020Keywords: adding share buttons  -->
+        <div class="share_btns">
+            <?php echo do_shortcode('[addtoany]'); ?>
+        </div>
+        
         <!-- 2020Keywords: adding like/dislike buttons  -->
-    	<div>
+    	<div class="like_btns">
             <?php echo do_shortcode('[posts_like_dislike]');?>
     	</div>
 
