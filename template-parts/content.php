@@ -71,6 +71,12 @@
 				</div>
 			</div>
 		</div><!-- .entry-meta -->
+
+        <!-- 2020Keywords: adding like/dislike buttons  -->
+    	<div>
+            <?php echo do_shortcode('[posts_like_dislike]');?>
+    	</div>
+
 		<?php
 		endif; ?>
 

@@ -337,3 +337,7 @@ div.wpforms-container-full .wpforms-form .wpforms-submit-container {
 .comments-area .comment-meta .comment-metadata a, .comments-area .comment-form-cookies-consent label {
 	color: #666 !important;
 }
+
+.pld-like-dislike-wrap {
+    margin-bottom: 0;
+}
