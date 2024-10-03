@@ -1,7 +1,7 @@
-![GitHub License](https://img.shields.io/github/license/DigitalCarleton/2020-Keywords) ![image](https://img.shields.io/badge/version-0.1-blue)
-
 2020 Keywords Child Theme
 ==========
+
+![GitHub License](https://img.shields.io/github/license/DigitalCarleton/2020-Keywords) ![image](https://img.shields.io/badge/version-0.1-blue)
 
 Contributors:  Austin Mason, Sonya Romanenko  
 Tested on: WordPress v5.5.3  
