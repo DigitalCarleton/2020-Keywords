@@ -1,12 +1,11 @@
+![GitHub License](https://img.shields.io/github/license/DigitalCarleton/2020-Keywords) ![image](https://img.shields.io/badge/version-0.1-blue)
+
 2020 Keywords Child Theme
 ==========
 
 Contributors:  Austin Mason, Sonya Romanenko  
 Tested on: WordPress v5.5.3  
 Parent theme: ResponsiveBlogily v3.8  
-Version: 0.1  
-License: GPLv2 or later  
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Description
 ----------
