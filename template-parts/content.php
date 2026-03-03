@@ -30,11 +30,11 @@
         /*  2020Keywords: adding part of speech form field data
             Print the part of speech value if exists
         */
-        $pos = get_post_meta( $post->ID, 'part_of_speech__optional_', true );
+        $pos = get_post_meta( get_the_ID(), 'part_of_speech__optional_', true );
         if ( ! empty ( $pos ) && $pos != -1 ) :
         ?>
         <div class="custom-fields cf-pos">
-            <?php printf( '%s.', $pos ); ?>
+            <?php printf( '%s.', esc_html( $pos ) ); ?>
         </div>
         <?php endif; ?>
 
@@ -44,11 +44,11 @@
         /*  2020Keywords: adding usage form field data
             Print the usage value if exists
         */
-        $usage = get_post_meta( $post->ID, 'usage__optional_', true );
+        $usage = get_post_meta( get_the_ID(), 'usage__optional_', true );
         if ( ! empty ( $usage ) ) : 
         ?>
         <div class="custom-fields cf-usage">
-            <?php printf( '"%s"', $usage ); ?>
+            <?php printf( '"%s"', esc_html( $usage ) ); ?>
         </div>
         <?php endif; ?>
 

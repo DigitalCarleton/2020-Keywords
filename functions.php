@@ -1,7 +1,14 @@
 <?php 
 add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_styles' );
+#load parent style
 function my_theme_enqueue_styles() {
-    wp_enqueue_style( 'child-style', get_template_directory_uri() . '/style.css' ); 
+    wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' ); 
+	#load child theme
+	wp_enqueue_style(
+        'child-style',
+        get_stylesheet_directory_uri() . '/style.css',
+        array('parent-style')
+    );
 }
 
 // 2020Keywords: overriding this function from inc/template-tags.php to:
@@ -17,20 +24,20 @@ if ( ! function_exists( 'responsiveblogily_posted_on' ) ) :
 		if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) ) {
 			$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time><time class="updated" datetime="%3$s">%4$s</time>';
 		}
-
+		# generate time tag
 		$time_string = sprintf( $time_string,
 			esc_attr( get_the_date( 'c' ) ),
 			esc_html( get_the_date() ),
 			esc_attr( get_the_modified_date( 'c' ) ),
 			esc_html( get_the_modified_date() )
 		);
-
+		#generate link of posted on xxx
 		$posted_on = sprintf(
 			/* translators: %s: post date. */
 			esc_html_x( 'Posted on %s', 'post date', 'responsiveblogily' ),
 			'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
 		);
-
+		#clear author information
 		$byline = "";
         // $byline = sprintf(
         //     /* translators: %s: post author. */
@@ -41,9 +48,11 @@ if ( ! function_exists( 'responsiveblogily_posted_on' ) ) :
 		// Tags link — modified from twentytwenty theme's get_post_meta() function
 		if ( has_tag() ) {
 			?>
-			<div class="tagcloud tag-right">
+			<!-- <div class="tagcloud tag-right"> -->
+			<span class="tagcloud tag-right">
 					<?php the_tags( 'Tags: ', ', ', '' ); ?>
-			</div>
+			<!-- </div> -->
+			</span>
 			<?php
 
 		}
